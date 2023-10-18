@@ -1,0 +1,65 @@
+.contenedor {
+    background: linear-gradient(to bottom right, rgb(8, 8, 26), rgb(182, 33, 7));
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1 {
+    color: azure;
+}
+
+input[type="number"],
+input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.tutiempo {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(8, 8, 26), rgb(182, 33, 7));
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+
+}
