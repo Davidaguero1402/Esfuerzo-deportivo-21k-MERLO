@@ -63,3 +63,37 @@ input[type="submit"]:hover {
     padding: 20px;
 
 }
+
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    .contenedor,
+    .tutiempo {
+        width: 80%; /* Reducir el ancho para pantallas más pequeñas */
+        padding: 15px; /* Ajustar el relleno */
+        font-size: 16px; /* Reducir el tamaño de fuente */
+    }
+
+    input[type="number"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 90%; /* Ajustar el ancho de los inputs y botón */
+        font-size: 14px; /* Reducir el tamaño de fuente de los inputs */
+    }
+}
+/* Estilos para el botón de volver al home */
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+    background-color: #555;
+}

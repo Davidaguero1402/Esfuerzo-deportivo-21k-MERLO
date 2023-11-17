@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import sqlite3
 #from foundrunner import found_runner
 from buscarcooredor import found_runner
 app = Flask(__name__)
@@ -20,12 +19,21 @@ def index():
             datos_corredor = found_runner(dorsal)
             print(datos_corredor)
 
-            datos={'dorsal':datos_corredor[0], 'titulo': 'Tu tiempo','nombre':datos_corredor[1],'tiempo': datos_corredor[2]}
+            if datos_corredor != 'Dorsal inexistente':
 
-            return render_template('tutiempo.html', datos = datos)
+                print(datos_corredor)
+
+                datos={'dorsal':datos_corredor[0], 'titulo': 'Tu tiempo','nombre':datos_corredor[1],'tiempo': datos_corredor[2]}
+                #Devolvemos los datos del corredor
+                return render_template('tutiempo.html', datos = datos)
+                
+            else:
+                #sino encontramos al dorsal que se busco retornamos otra pagina dorsalnotfound
+                datos={'dorsal':dorsal, 'titulo': 'Dorsal no encontrado', 'nombre':datos_corredor[1]}
+                return render_template('dorsalnotfound.html', datos = datos)
 
     return render_template('index.html',titulo='Esfuerzo deportivo')
-
+ 
 
 
 
