@@ -11,6 +11,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:Arial, Helvetica, sans-serif;
+    margin: 10px;  /* Ajusta según sea necesario */
 }
 
 .body {
@@ -19,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;  /* Para apilar elementos verticalmente */
 }
 .h1 {
     color: azure;

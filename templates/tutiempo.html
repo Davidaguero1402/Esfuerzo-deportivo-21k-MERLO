@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{datos.titulo}}</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
 
 <body class="body">
     <div class="tutiempo">
         <h1 class="h1">Tu Nombre: {{datos.nombre}}</h1>
-        <h1 class="h1"> Tu dorsal es: {{datos.dorsal}}</h1>
-        <h1 class="h1">Tu tiempo fue de {{datos.tiempo}} hs</h1>
+        <h2 class="h1"> Tu dorsal es: {{datos.dorsal}}</h2>
+        <h2 class="h1">Tu tiempo fue de {{datos.tiempo}} hs</h2>
+        <br>
+        <h1>Posiciones Finales</h1>
+        <ul>
+            <li>Posicion General: {{datos.posicion_general}}</li>
+            <li>Posicion Categoria: {{datos.posicion_categoria}}</li>   
+        </ul>
+
         <a href="/" class="boton-home boton-volver">Seguir Buscando</a>
     </div>
 </body>

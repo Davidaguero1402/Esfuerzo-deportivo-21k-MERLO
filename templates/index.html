@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
-    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">  <!--esta es el archivo con todo el css orignal-->
+    <!--  <link rel="stylesheet" href="{{url_for('static',filename='styles/main.css')}}">   Este solo esta mal escrito-->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"> Este es para llamar al archivo que compila tailwind-->
+
+    <title>{{diccionario.titulo}}</title>
 </head>
+<img src="../static/logo.png">
 <body class="body">
-        
+    <h1 class="font-sans"></h1>
     <form action="" method="post" class="contenedor">
-        <h1 class="h1"> 21K Merlo</h1>
+        <h1 class="h1">21K Merlo</h1>
+        <h2>Cantidad de corredores: {{diccionario.corredores}}</h2>
         <label for="dorsal">Dorsal: </label>
         <input type="number" id="dorsal" name="dorsal" placeholder="Ingresa tu Dorsal" required /><br>
         <input type="submit" id="send-signup" name="signup" value="Ver mi tiempo" />
     </form>
-    <img src="../static/logo.png">
-
+    
+    
 </body>
+
 </html>

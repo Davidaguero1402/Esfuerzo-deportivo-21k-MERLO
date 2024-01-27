@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{datos.titulo}}</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
 
 <body class="body">
     <div class="tutiempo">
-        <h1 class="h1">Tu Nombre: {{datos.nombre}}</h1>
-        <h1 class="h1"> Tu dorsal es: {{datos.dorsal}}</h1>
+        <h2 class="h1">Tu Nombre: {{datos.nombre}}</h2>
+        <h2 class="h1"> Tu dorsal es: {{datos.dorsal}}</h2>
         <h1 class="h1">Lo sentimos. No hemos podido obtener tu tiempo.</h1>
+        <H2> Estas pueden ser algunas de las razones</H2>
+        <ul>
+            <li> Talvez esta persona no realizo la carrera</li>
+            <li> Si esta persona inicio la competencia talvez aun no termina la carrera</li>
+            <li> Si ya termino la carrera tal vez no registramos cuando llego </li>
+        </ul>
         <a href="/" class="boton-home boton-volver">Seguir Buscando</a>
     </div>
 </body>
